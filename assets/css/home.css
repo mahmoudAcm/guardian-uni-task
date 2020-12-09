@@ -2,7 +2,7 @@
     min-height: 600px;
     padding-top: 100px;
     position: relative;
-    background-image: url(/assets/images/home-img.png);
+    background-image: url(../images/home-img.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
