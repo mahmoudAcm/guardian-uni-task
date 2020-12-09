@@ -21,7 +21,7 @@
 .service-first {
     width: 100%;
     min-height: 600px;
-    background-image: url(../images/service-first.png);
+    background-image: url(https://mahmoudacm.github.io/guardian-uni-task/assets/images/service-first.png);
     background-repeat: no-repeat;
     background-position: left;
 }
@@ -55,7 +55,7 @@
 .service-second {
     width: 100%;
     min-height: 600px;
-    background-image: url(../images/service-second.png);
+    background-image: url(https://mahmoudacm.github.io/guardian-uni-task/assets/images/service-second.png);
     background-repeat: no-repeat;
     background-position: left;
 }
@@ -73,7 +73,7 @@
 .service-third {
     width: 100%;
     min-height: 600px;
-    background-image: url(../images/service-third.png);
+    background-image: url(https://mahmoudacm.github.io/guardian-uni-task/assets/images/service-third.png);
     background-repeat: no-repeat;
     background-position: left;
 }
