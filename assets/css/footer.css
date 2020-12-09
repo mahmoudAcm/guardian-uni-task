@@ -1,0 +1,52 @@
+footer {
+    width: 100%;
+    min-height: 480px;
+    background-color: rgb(24, 33, 52);
+}
+
+footer .footer-start {
+    padding-top: 100px !important;
+    border-bottom: 1px solid rgb(156, 181, 224);
+    padding-bottom: 25px !important;
+}
+
+footer .links h5 {
+    margin: 25px auto !important;
+    color: white !important;
+}
+
+footer .links li{
+    list-style: none;
+    color: rgb(156, 181, 224);
+    margin: 15px auto;
+}
+
+footer .social-links div:first-of-type {
+    margin-left: 15px;
+}
+
+footer .social-links div {
+    background-color: white;
+    border-radius: 7px;
+    margin: 7px;
+    cursor: pointer;
+}
+
+.footer-end {
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+.copy {
+    color: rgb(156, 181, 224); 
+}
+
+@media (max-width: 1200px) {
+    footer .footer-start {
+       margin: auto;
+    }
+    
+    footer .footer-start .col-auto {
+        width: 50%;
+    }
+}

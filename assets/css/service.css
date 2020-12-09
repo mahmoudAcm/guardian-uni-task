@@ -1,0 +1,93 @@
+.service {
+    width: 100%;
+    min-height: 450px;
+}
+
+.service h1:first-of-type, .service .service-title {
+    margin: auto;
+    text-align: center;
+}
+
+.service h1 {
+    padding-top: 100px;
+}
+
+.service .service-title {
+    width: 500px;
+    margin-top: 10px;
+    color: rgb(125, 138, 151);
+}
+
+.service-first {
+    width: 100%;
+    min-height: 600px;
+    background-image: url(/assets/images/service-first.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.service-first .main-content {
+    width: 40%;
+}
+
+.service-first .card {
+    border: none;
+    margin-top: 30px;
+}
+
+.service-first .main-content h3 {
+    width: 300px;
+    margin-top: 70px;
+}
+
+.service-first .main-content p {
+    color: rgb(125, 138, 151);
+}
+
+.service-first .main-content .service-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.service-second {
+    width: 100%;
+    min-height: 600px;
+    background-image: url(/assets/images/service-second.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.service-second .main-content {
+    width: 35%;
+    margin-top: 250px;
+}
+
+.service-second .main-content p{
+    color: rgb(125, 138, 151);
+    margin-top: 30px;
+}
+
+.service-third {
+    width: 100%;
+    min-height: 600px;
+    background-image: url(/assets/images/service-third.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.service-third .main-content {
+    width: 35%;
+    margin-top: 250px;
+}
+
+.service-third .main-content p{
+    color: rgb(125, 138, 151);
+    margin-top: 30px;
+}
+
+.service .service-item button{
+    margin-top: 10px;    
+}

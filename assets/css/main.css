@@ -1,0 +1,28 @@
+.brand {
+    color: rgb(7, 64, 98);
+}
+
+.bg-insured {
+    background-color: rgb(233, 244, 255);
+}
+
+.color-insured {
+    color: rgb(68, 166, 255);
+}
+
+.color-insured:hover {
+    color: rgb(68, 166, 255);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(68, 166, 255);
+}
+
+body {
+    background-color: rgb(252, 253, 255);
+}

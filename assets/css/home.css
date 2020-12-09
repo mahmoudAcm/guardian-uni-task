@@ -1,0 +1,31 @@
+.home {
+    min-height: 600px;
+    padding-top: 100px;
+    position: relative;
+    background-image: url(/assets/images/home-img.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.home-aside {
+    margin-top: 90px;
+}
+
+.home-getInured-input {
+    background-color: rgb(244, 246, 250);
+}
+
+.home-img img {
+    height: 450px;
+}
+
+.companies {
+    margin-top: 15%;
+    width: 105%;
+}
+
+@media (max-width: 1200px) {
+    .home {
+       width: 100% !important; 
+    }
+}
