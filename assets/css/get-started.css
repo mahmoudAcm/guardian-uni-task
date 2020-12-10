@@ -28,3 +28,13 @@
 .get-started-left-side .learn-more-btn {
     border: 1px solid white;
 }
+
+@media (max-width: 992px) {
+    .get-started .main-content {
+        text-align: center;
+    }
+
+    .get-started .main-content .get-started-left-side{
+       margin: 0;
+    }
+}
