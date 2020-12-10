@@ -58,7 +58,7 @@
 }
 
 .testimonials-slides .card {
-    width: 610px;
+    width: 580px;
     height: 250px;
     margin: auto 25px;
     transition: 0.3s;
@@ -79,12 +79,6 @@
     color: rgb(125, 138, 151);
 }
 
-@media (max-width: 1199px) {
-    .testimonials .main-content {
-        display: none;
-    }
+@media (max-width: 768px) {
 
-    .hidden-message {
-        display: block !important;
-    }
 }

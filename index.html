@@ -21,7 +21,7 @@
     <title>Guardian</title>
   </head>
   <body>
-    <header class="">
+    <header>
         <div class="container">
             <div class="float-left navbar-brand m-2">
                 <h4 class="brand">Guardian</h4>
@@ -37,10 +37,10 @@
             </nav>
             <nav class="menu shadow">
                 <ul class="navbar-nav mr-auto">
-                    <li>Home</li>
-                    <li>Product</li>
-                    <li>Feature</li>
-                    <li>Services</li>
+                    <li data-section="home">Home</li>
+                    <li data-section="product">Product</li>
+                    <li data-section="get-started">Feature</li>
+                    <li data-section="service">Services</li>
                 </ul>
                 <div class="d-flex justify-content-center my-3">
                     <button class="btn bg-insured px-5 shadow-none color-insured">Get insured</button>
@@ -57,15 +57,19 @@
     <section class="home">
         <div class="container">
             <div class="row">
-                <div class="col-5 home-aside">
-                    <h1>Home insurance that protects you</h1>
+                <div class="home-aside">
+                    <h2>Home insurance that protects you</h2>
                     <p class="py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <div class="from-groub row pl-3 mt-4">
+                    <div class="input-group row pl-3 mt-4">
                         <input class="home-getInured-input form-control col-8 shadow-none" placeholder="Type in your home address"/>
-                        <button class="btn shadow-none btn-primary px-4">Get insured</button>
+                        <button class="btn shadow-none btn-primary px-4 input-group-append">Get insured</button>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section class="home-spliter">
+        <div class="container">
             <img src="https://mahmoudacm.github.io/guardian-uni-task/assets/images/home-companies.png" class="companies row" draggable="false">
         </div>
     </section>

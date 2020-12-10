@@ -29,12 +29,11 @@ testimonials.forEach(slide => {
 
 const sliderItems = document.querySelectorAll("#slides .card");
 
-const step = 640;
 let count = 0;
 
 const moveSlide = () => {
     container[0].scrollTo({
-        left: sliderItems[count].offsetLeft - 375,
+        left: sliderItems[count].offsetLeft - leftBtn.offset().left - 50,
         behavior: 'smooth'
     })
 
@@ -51,6 +50,9 @@ const moveSlide = () => {
 }
 
 moveSlide();
+$(window).on('resize', () => {
+    moveSlide();
+});
 
 rightBtn.on('click', () => {
     count = Math.min(testimonials.length - 1, count + 1);
@@ -65,3 +67,5 @@ leftBtn.on('click', () => {
     moveSlide();
     console.log('left ' + count);
 });
+
+console.log(leftBtn.offset().left);

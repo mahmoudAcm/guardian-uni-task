@@ -1,9 +1,10 @@
 .home {
-    min-height: 600px;
+    height: 580px;
     padding-top: 100px;
     position: relative;
     background-image: url(https://mahmoudacm.github.io/guardian-uni-task/assets/images/home-img.png);
-    background-size: contain;
+    background-size: 100%;
+    background-position: right;
     background-repeat: no-repeat;
 }
 
@@ -19,13 +20,41 @@
     height: 450px;
 }
 
-.companies {
-    margin-top: 15%;
+.home-spliter {
+    padding: 100px 0 20px;
+}
+
+.home-spliter .companies {
     width: 105%;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
     .home {
-       width: 100% !important; 
+        background-image: none;
+        height: 400px !important;
+    }
+
+    .home-aside {
+        margin-top: 0;
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .home-aside .input-group {
+        margin-left: 0.5%;
+    }
+
+    .home-spliter {
+        padding: 0;
+    }
+
+    .home-spliter .companies {
+        width: 110%;
+    }
+}
+
+@media (min-width: 769px) {
+    .home-aside {
+        width: 45% !important;
     }
 }
