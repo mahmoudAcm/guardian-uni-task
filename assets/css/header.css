@@ -8,6 +8,10 @@ header {
     top: 0;
 }
 
+header .brand img {
+   margin-top: -10px; 
+}
+
 nav .nav-item {
     cursor: pointer;
 }
