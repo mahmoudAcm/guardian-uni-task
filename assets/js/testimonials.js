@@ -13,8 +13,6 @@ const container = $(".testimonials .main-content");
 const leftBtn = $(".left-side");
 const rightBtn = $(".right-side");
 
-slidesContainer.css({ width: 600 * (testimonials.length + 1 )+ 'px'});
-
 testimonials.forEach(slide => {
     slidesContainer.append(`
         <div class="card">
@@ -29,28 +27,41 @@ testimonials.forEach(slide => {
 
 const sliderItems = document.querySelectorAll("#slides .card");
 
-let count = 0;
+let count = 1;
 
 const moveSlide = () => {
+    const cardWidth = rightBtn.offset().left - leftBtn.offset().left ;
+
+    //resize the slider container to fit the new cards sizes
+    slidesContainer.css({ width: (sliderItems.length + 2) * cardWidth });
+
+    //resize the card programaticly 
+    sliderItems.forEach((element) => {
+        element.style.width = cardWidth - 30 + 'px';
+    });
+
+    //move the scroll to the next card offset
     container[0].scrollTo({
-        left: sliderItems[count].offsetLeft - leftBtn.offset().left - 50,
+        left: sliderItems[count].offsetLeft - leftBtn.offset().left - 40,
         behavior: 'smooth'
-    })
+    });
+
+    console.log(container[0].offsetLeft);
 
     sliderItems.forEach((element, index) => {
         if(index === count) {
-            element.style.cssText = 'transform: scale(1.1);'; 
+            element.style.transform = 'scale(1.1)';
             element.classList.add('shadow');
         }
         else  {
-            element.style.cssText = 'transform: scale(1)'; 
+            element.style.transform = 'scale(1)'; 
             element.classList.remove('shadow');
         } 
     });
 }
 
 moveSlide();
-$(window).on('resize', () => {
+$(window).on('resize load', () => {
     moveSlide();
 });
 

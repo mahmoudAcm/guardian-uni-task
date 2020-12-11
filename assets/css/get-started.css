@@ -1,14 +1,14 @@
 .get-started {
     width: 100%;
-    height: 500px;
+    min-height: 500px;
     background-image: url(https://mahmoudacm.github.io/guardian-uni-task/assets/images/get-started.png);
     background-repeat: no-repeat;
     background-size: cover;
+    padding-bottom: 100px;
 }
 
-
 .get-started .main-content {
-    padding-top: 150px;
+    padding-top: 130px;
 }
 
 .get-started-left-side {
@@ -36,5 +36,9 @@
 
     .get-started .main-content .get-started-left-side{
        margin: 0;
+    }
+
+    .get-started-title {
+        font-size: 30px;
     }
 }

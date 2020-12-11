@@ -1,6 +1,7 @@
 .service {
     width: 100%;
     min-height: 450px;
+    max-width: 2000px;
 }
 
 .service h1:first-of-type, .service .service-title {
@@ -12,22 +13,27 @@
     padding-top: 100px;
 }
 
+.service-item {
+    min-height: 528px;
+    padding-bottom: 3%;
+}
+
 .service .service-title {
-    width: 500px;
+    width: 90%;
     margin-top: 10px;
     color: rgb(125, 138, 151);
 }
 
 .service-first {
     width: 100%;
-    height: 600px;
     background-image: url(https://mahmoudacm.github.io/guardian-uni-task/assets/images/service-first.png);
     background-repeat: no-repeat;
     background-position: left;
+    padding-bottom: 2%;
 }
 
 .service-first .main-content {
-    width: 500px;
+    width: 45%;
     padding-top: -5px;
 }
 
@@ -63,14 +69,18 @@
 
 .service-second {
     width: 100%;
-    height: 600px;
     background-image: url(https://mahmoudacm.github.io/guardian-uni-task/assets/images/service-second.png);
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: right;
+}
+
+.service-second .container {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .service-second .main-content {
-    width: 35%;
+    width: 50%;
     margin-top: 250px;
 }
 
@@ -81,14 +91,18 @@
 
 .service-third {
     width: 100%;
-    height: 600px;
     background-image: url(https://mahmoudacm.github.io/guardian-uni-task/assets/images/service-third.png);
     background-repeat: no-repeat;
     background-position: left;
 }
 
+.service-third .container {
+    display: flex;
+    justify-content: flex-start;
+}
+
 .service-third .main-content {
-    width: 35%;
+    width: 50%;
     margin-top: 250px;
 }
 
@@ -101,11 +115,45 @@
     margin-top: 10px;    
 }
 
+@media (max-width: 576px) {
+    .service-first .main-content {
+        width: 100%;
+    }
+
+    .service-first-title {
+        font-size: 15px;
+    }
+
+    .service-first .main-content-right p {
+        font-size: 15px;
+    }
+
+    .service-second .main-content, .service-third .main-content {
+        align-items: center !important;
+        text-align: center !important;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+    .service-first .main-content {
+        width: 100%;
+    }
+
+    .service-first-title {
+        font-size: 18px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .service-first .main-content {
+        width: 75%;
+    }
+}
 
 @media (max-width: 992px) {
-    .service-second, .service-third{
+    .service-second, .service-third {
         background-image: none;
-        height: 250px;
     }
 
     .service-second .main-content, .service-third .main-content {
@@ -115,11 +163,11 @@
     }
 
     .service-second .main-content {
-        align-items: flex-start;
+       align-items: flex-end;
+       text-align: end;
     }
 
     .service-third .main-content {
-        align-items: flex-end;
-        text-align: end;
+       align-items: flex-start;
     }
 }

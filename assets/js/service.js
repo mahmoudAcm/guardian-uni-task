@@ -6,7 +6,7 @@ const serviceCard = ({ title, bg, rest }) => `
             <div class="service-circle ${bg}"></div>
         </div>
         <div class="main-content-right">
-            <h5>${title}</h5>
+            <h5 class='service-first-title'>${title}</h5>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
     </div>
